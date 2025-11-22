@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Ganino</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fafafa;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        nav a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #0070f3;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            margin: 0.5rem;
+            border-radius: 6px;
+            background: #0070f3;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #0059c9;
+        }
+
+        h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div><strong>Nicholas Ganino</strong></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Nicholas Ganino</h1>
+    <p>Electrical Engineering student at Purdue · Image Processing · Optics · Semiconductor Engineering</p>
+
+    <a class="btn" href="#research">View Research</a>
+    <a class="btn" href="#projects">Projects</a>
+    <a class="btn" href="#cv">Download CV</a>
+</section>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an Electrical Engineering student at Purdue University focusing on image processing, optics, 
+            computer vision, and semiconductor manufacturing. I conduct undergraduate research in image formation 
+            and depth-from-defocus systems, with experience in Fourier optics and computational imaging.
+        </p>
+        <p>
+            In Summer 2025 I will be working at TSMC as an Equipment Engineer. My interests span imaging systems, 
+            optical hardware, sensor physics, and embedded system design.
+        </p>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+
+        <div class="card">
+            <h3>Accelerated Point Spread Function Computation</h3>
+            <p>
+                I am developing a fast method for computing PSFs using Fourier-domain decomposition and structured 
+                optimization, enabling significant speedup for imaging simulation pipelines.
+            </p>
+            <p><em>Preprint coming December 2025.</em></p>
+            <!-- When ready: -->
+            <!-- <a href="psf_preprint.pdf">Download Preprint</a> -->
+        </div>
+
+        <div class="card">
+            <h3>Depth-from-Defocus Image Processing</h3>
+            <p>
+                Researching depth estimation using blur gradients and frequency-domain cues, with applications 
+                in compact imaging systems and computational photography.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fourier Optics 4f System for Edge Detection</h3>
+            <p>
+                Built a physical 4f optical processor to demonstrate spatial filtering and real-time edge detection 
+                using Fourier masks.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>Plasma Speaker System</h3>
+            <p>High-voltage audio plasma speaker using MOSFET modulation and custom wound transformer.</p>
+        </div>
+
+        <div class="card">
+            <h3>ESP32-S3 LCD + FFT Analyzer</h3>
+            <p>Real-time FFT visualization on a TFT LCD using the ESP32-S3 and optimized DMA pipelines.</p>
+        </div>
+
+        <div class="card">
+            <h3>Image Sensor Analysis Tools</h3>
+            <p>Python and C tools for exploring noise, pixel statistics, and radial PSF functions.</p>
+        </div>
+
+    </section>
+
+    <section id="cv">
+        <h2>CV</h2>
+        <p>
+            Add your CV PDF to the repository and link it here:
+            <br>
+            <a href="cv.pdf">Download CV (Coming Soon)</a>
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourname@purdue.edu</p>
+        <p>GitHub: <a href="https://github.com/nganino">github.com/nganino</a></p>
+        <p>LinkedIn: (link here)</p>
+    </section>
+
+</div>
+
+<footer>
+    © 2025 Nicholas Ganino
+</footer>
+
+</body>
+</html>
